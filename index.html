@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atlas Corporal – Início</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="index.html">
+      <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="16" fill="#0B6B52"/><circle cx="18" cy="18" r="8" fill="none" stroke="#F5F6F0" stroke-width="3"/><circle cx="18" cy="18" r="2.5" fill="#F5F6F0"/></svg>
+      Atlas Corporal
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="calculadora.html">Calculadora</a>
+      <a href="medir.html">Como medir</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <span class="eyebrow">Educação Física · Composição corporal</span>
+        <h1>Entenda o seu corpo em números.</h1>
+        <p class="lead">Digite suas medidas e descubra o percentual de gordura e o de massa magra. Tudo explicado de forma simples, para acompanhar a sua evolução.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="calculadora.html">Abrir a calculadora</a>
+          <a class="btn btn-outline" href="medir.html">Como medir</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="donut-card">
+          <svg width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="Gráfico de rosca ilustrativo: massa magra e gordura">
+            <circle cx="110" cy="110" r="80" fill="none" stroke="#0B6B52" stroke-width="28"/>
+            <circle cx="110" cy="110" r="80" fill="none" stroke="#C2410C" stroke-width="28" stroke-dasharray="110 503" transform="rotate(-90 110 110)"/>
+            <text x="110" y="106" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="22" fill="#13222B">Seu corpo</text>
+            <text x="110" y="130" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#3F5159">ilustração</text>
+          </svg>
+          <div class="legend">
+            <span><i style="background:#0B6B52"></i>Massa magra</span>
+            <span><i style="background:#C2410C"></i>Gordura</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>A tabela de medidas</h2>
+      <p class="note">Cada medida do corpo tem o seu quadradinho, como na tabela periódica. Os valores abaixo são só um exemplo.</p>
+      <div class="tiles">
+        <div class="tile t-green"><span class="abbr">ALT</span><span class="num">174</span><span class="name">Altura · cm</span></div>
+        <div class="tile t-green"><span class="abbr">PES</span><span class="num">58</span><span class="name">Peso · kg</span></div>
+        <div class="tile t-orange"><span class="abbr">CIN</span><span class="num">67</span><span class="name">Cintura · cm</span></div>
+        <div class="tile t-orange"><span class="abbr">QUA</span><span class="num">82</span><span class="name">Quadril · cm</span></div>
+        <div class="tile t-orange"><span class="abbr">PEI</span><span class="num">77</span><span class="name">Peitoral · cm</span></div>
+        <div class="tile t-blue"><span class="abbr">BIC</span><span class="num">25</span><span class="name">Bíceps · cm</span></div>
+        <div class="tile t-blue"><span class="abbr">ANT</span><span class="num">24</span><span class="name">Antebraço · cm</span></div>
+        <div class="tile t-blue"><span class="abbr">COX</span><span class="num">54</span><span class="name">Coxa · cm</span></div>
+        <div class="tile t-blue"><span class="abbr">PAN</span><span class="num">33</span><span class="name">Panturrilha · cm</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>O que você descobre</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Percentual de gordura</h3>
+          <p>Quanto do seu peso é gordura, com uma faixa de classificação para você se situar.</p>
+        </div>
+        <div class="card">
+          <h3>Massa magra</h3>
+          <p>O percentual e os quilos de músculos, ossos, órgãos e água do seu corpo.</p>
+        </div>
+        <div class="card">
+          <h3>Proporções do corpo</h3>
+          <p>IMC, relação cintura-quadril e cintura-altura, além das medidas guardadas para comparar mês a mês.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Atlas Corporal é uma ferramenta educativa. Os resultados são estimativas e não substituem a avaliação de um profissional de Educação Física ou de saúde.
+  </footer>
+
+</body>
+</html>

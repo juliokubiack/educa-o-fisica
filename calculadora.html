@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atlas Corporal – Calculadora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="index.html">
+      <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="16" fill="#0B6B52"/><circle cx="18" cy="18" r="8" fill="none" stroke="#F5F6F0" stroke-width="3"/><circle cx="18" cy="18" r="2.5" fill="#F5F6F0"/></svg>
+      Atlas Corporal
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <a href="calculadora.html" aria-current="page">Calculadora</a>
+      <a href="medir.html">Como medir</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top: 48px; padding-bottom: 8px">
+      <h1 class="page-title">Calculadora de composição corporal</h1>
+      <p class="page-intro">Escolha quantas pessoas vão usar, preencha as medidas de cada uma e veja o resultado mudar enquanto você digita.</p>
+    </section>
+
+    <section class="calc">
+      <!-- Formulário -->
+      <div class="panel">
+        <div class="group">
+          <span class="group-label">Quantas pessoas?</span>
+          <div class="row" id="counts"></div>
+        </div>
+
+        <div class="group" id="tabs-group" hidden>
+          <span class="group-label">Quem você está preenchendo agora?</span>
+          <div class="row" id="tabs" role="group" aria-label="Escolher pessoa"></div>
+        </div>
+
+        <div class="group">
+          <span class="group-label">Sexo</span>
+          <div class="row">
+            <button type="button" class="sex-btn" id="sex-M">Masculino</button>
+            <button type="button" class="sex-btn" id="sex-F">Feminino</button>
+          </div>
+        </div>
+
+        <div class="fields" id="fields"></div>
+      </div>
+
+      <!-- Resultado -->
+      <div class="result-panel">
+        <h2 id="result-title">Seu resultado</h2>
+        <div id="result"></div>
+      </div>
+    </section>
+
+    <section class="section" id="compare-section" hidden>
+      <h2>Comparação entre as pessoas</h2>
+      <div id="compare" style="display: flex; flex-direction: column; gap: 12px"></div>
+    </section>
+
+    <section class="section">
+      <h2 id="ratios-title">Proporções do corpo</h2>
+      <div class="stats" id="ratios"></div>
+    </section>
+
+    <section class="section">
+      <h2 id="track-title">Medidas para acompanhar</h2>
+      <p class="note">Peitoral, bíceps, antebraço, coxa e panturrilha não entram na conta da gordura. Elas servem para ver o corpo mudando ao longo dos meses.</p>
+      <div class="stats" id="track"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Os valores são estimativas, com margem de erro de alguns pontos percentuais. Adolescentes e atletas podem ter resultados menos precisos. Para uma medida exata, procure um profissional.
+  </footer>
+
+  <script src="calculadora.js"></script>
+</body>
+</html>
